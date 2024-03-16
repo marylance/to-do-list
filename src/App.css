@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.custom-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+body {
+  background-image: url(images/bgg.png);
+  background-size: cover;
+  font-family: 'Times New Roman' sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin-right: 13%;
+  margin-top: 70px;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.text-center {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'DM sans' sans-serif;
+}
+
+.todo-form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.todo-input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dee2e6;
+  padding: 9px 10px;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item label {
+  flex: 1;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.todo-item button {
+  margin-left: 10px;
+}
+
+/* Custom styles for Edit mode */
+.edit-mode {
+  background-color: black;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.edit-input {
+  width: calc(100% - 90px);
+  margin-right: 10px;
+
+
+
+  }
+  .btn-danger{ /*delete button*/
+    background-color: #602e9e;
+   
+  }
+  .btn-danger:hover {
+    filter: brightness(85%);
+    background-color: #602e9e;
+  }
+  .btn-success { /*mark all done*/
+    margin-top: 0px;
+    margin-left: 20px;
+    background-color: #ff6233;
+    color: black;
+  }
+  
+  .btn-succes:hover {
+    filter: brightness(85%);
+    background-color: #ff6233;
+  }
+
+  .btn-warning { /*edit*/
+    background-color: #ff6233;
+  } 
+
+  .btn-warning:hover {
+    filter: brightness(85%);
+    background-color: #ff6233;
+  }
+  .btn-primary {
+    background-color: #8c52ff;
+  }
+  .btn-primary:hover {
+    filter: brightness(85%);
+    background-color: #8c52ff;
+  }
