@@ -26,12 +26,16 @@ const App = () => {
   };
 
   const deleteTodo = (id) => {
-    const updatedTodos = todos.filter((todo) => todo.id !== id);
-    setTodos(updatedTodos);
+    if (window.confirm('Are you sure you want to delete this task?')) {
+      const updatedTodos = todos.filter((todo) => todo.id !== id);
+      setTodos(updatedTodos);
+    }
   };
 
   const deleteAllTodos = () => {
-    setTodos([]);
+    if (window.confirm('Are you sure you want to delete all tasks?')) {
+      setTodos([]);
+    }
   };
 
   const markAllDone = () => {
